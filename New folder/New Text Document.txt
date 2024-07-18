@@ -1,0 +1,124 @@
+ <div>
+                <div className="h-full w-full">
+                    <nav >
+                        <div className="max-w-screen-2xl mx-auto">
+
+
+                            <div className="flex mx-auto justify-between w-5/6">
+                                <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto  pt-16   gap-10">
+                                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+                                        <img src={logo} className="h-[93px] w-[200px] mt-[-30px] " alt="Flowbite Logo" />
+                                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+                                    </a>
+
+                                    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                                        <ul className="font-medium  gap-10 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0    dark:border-gray-700">
+                                            <li>
+                                                <a href="#" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700  " aria-current="page">HOME</a>
+                                            </li>
+                                            <li>
+                                                <a href="#gfhfg" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700">ABOUT US</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700">TOKENOMICS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700">ROADMAP</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700">REFER & ERAN </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" className="block py-2 px-3  text-2xl font-Grandstander font-bold  text-white  rounded md:p-0 hover:text-primary-700">CONTACT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div className="flex gap-6">
+                                    <div className="hidden xs:flex items-center gap-10">
+                                        <div className="hidden lg:flex items-center gap-2">
+                                            <MoonIcon className="h-6 w-6" />
+                                            <SunIcon className="h-6 w-6" />
+                                        </div>
+                                        <div>
+                                            <button className="rounded-full border-solid border-2 text-black border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
+                                                Free Trial
+                                            </button>
+                                        </div>
+                                    </div>
+                                    {/* Mobile navigation toggle */}
+                                    <div className="lg:hidden flex items-center text-white text-6xl font-Grandstander font-bold ">
+                                        <button onClick={() => setToggleMenu(!toggleMenu)}>
+                                            <Bars3Icon className="h-6" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div className="h-full w-full">
+                <nav>
+                    <div className="max-w-screen-2xl mx-auto  ">
+                        <div className="flex mx-auto justify-between w-5/6 ">
+                            {/* Primary menu and logo */}
+                            <div className="flex items-center gap-16 my-12">
+                                {/* logo */}
+                                <div>
+                                    <a
+                                        href="/"
+                                        className="flex gap-1 font-bold text-gray-700 items-center "
+                                    >
+                                        <img src={logo} className="h-[93px] w-[200px] mt-[-30px] " />
+
+                                        {/* <PaperAirplaneIcon className="h-6 w-6 text-primary" /> */}
+                                        {/* <span>Paper.io</span> */}
+                                    </a>
+                                </div>
+                                {/* primary */}
+                                <div className="hidden lg:flex gap-8   font-medium text-white text-3xl font-Grandstander  ">
+                                    <a href="#" className="hover:text-primary-700 ">
+                                        Home
+                                    </a>
+                                    <a href="#" className="hover:text-primary-700 ">Benefits</a>
+                                    <a href="#" className="hover:text-primary-700">Our Classes</a>
+                                    <a href="#" className="hover:text-primary-700">Contact Us</a>
+                                    <a href="#" className="hover:text-primary-700 ">Benefits</a>
+                                    <a href="#" className="hover:text-primary-700">Our Classes</a>
+                                    <a href="#" className="hover:text-primary-700">Contact Us</a>
+                                </div>
+
+                            </div>
+                            {/* secondary */}
+                            <div className="flex gap-6">
+                                <div className="hidden xs:flex items-center gap-10">
+                                    <div className="hidden lg:flex items-center gap-2">
+                                        <MoonIcon className="h-6 w-6" />
+                                        <SunIcon className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                        <button className="rounded-full border-solid border-2 text-black border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
+                                            Free Trial
+                                        </button>
+                                    </div>
+                                </div>
+                                {/* Mobile navigation toggle */}
+                                <div className="lg:hidden flex items-center text-white text-6xl font-Grandstander font-bold ">
+                                    <button onClick={() => setToggleMenu(!toggleMenu)}>
+                                        <Bars3Icon className="h-6" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* mobile navigation */}
+                    
+                </nav>
+            </div>
+
+
+
