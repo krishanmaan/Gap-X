@@ -49,7 +49,11 @@ export default {
         'Segoe UI Symbol',
         'Noto Color Emoji'
       ]
-    }
+    },
+    boxShadow: {
+      custom: '0 20px 25px -15px rgba(0, 0, 0, .3)',
+      'custom-button': '0 1px 3px -1px rgba(0, 0, 0, .6)',
+    },
   },
   plugins: [],
 }

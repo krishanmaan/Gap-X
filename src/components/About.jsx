@@ -4,7 +4,7 @@ import baner from '../../public/assets/img/banner/banner2.png'
 const About = () => {
   return (
     <>
-      <section className='p-10 xl:flex  md:flex h-screen justify-center'>
+      <section id='aboutus' className=' xl:flex  md:flex h-screen justify-center'>
         <div className='w-full  flex items-center'>
           <img src={baner} alt="" className=' items-center mr-10 ' />
           <div className="circlePosition w-[500px] h-[500px] bg-[#203A04] rounded-[100%] absolute 

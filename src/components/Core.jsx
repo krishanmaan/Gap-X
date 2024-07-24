@@ -5,31 +5,31 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Core = () => {
-    const data = {
-        labels: ['Launchpad Initiatives', 'Presale Distribution', 'Development ', 'Team', 'Bonus for Top Long-term Staking Partners', 'Reserved for future Strategic Initiatives'],
-        datasets: [
-            {
-                label: '',
-                data: [10, 40, 15, 15, 10,10],
-                backgroundColor: [
-                    '#44A08D',
-                    '#033356',
-                    '#136F84',
-                    '#012641',
-                    '#0B446D',
-                    '#191F28',
-                ],
-                // borderColor: [
-                //     'rgba(255, 99, 132, 1)',
-                //     'rgba(54, 162, 235, 1)',
-                //     'rgba(255, 206, 86, 1)',
-                //     'rgba(75, 192, 192, 1)',
-                //     'rgba(153, 102, 255, 1)',
-                // ],
-                // borderWidth: 1,
-            },
-        ],
-    };
+    // const data = {
+    //     labels: ['Launchpad Initiatives', 'Presale Distribution', 'Development ', 'Team', 'Bonus for Top Long-term Staking Partners', 'Reserved for future Strategic Initiatives'],
+    //     datasets: [
+    //         {
+    //             label: '',
+    //             data: [10, 40, 15, 15, 10,10],
+    //             backgroundColor: [
+    //                 '#44A08D',
+    //                 '#033356',
+    //                 '#136F84',
+    //                 '#012641',
+    //                 '#0B446D',
+    //                 '#191F28',
+    //             ],
+    //             borderColor: [
+    //                 'rgba(255, 99, 132, 1)',
+    //                 'rgba(54, 162, 235, 1)',
+    //                 'rgba(255, 206, 86, 1)',
+    //                 'rgba(75, 192, 192, 1)',
+    //                 'rgba(153, 102, 255, 1)',
+    //             ],
+    //             borderWidth: 1,
+    //         },
+    //     ],
+    // };
     return (
 
         // <div className="bg-gray-900 text-white py-12">
@@ -118,11 +118,11 @@ const Core = () => {
                     <p className='font-Inter' >Held in reserve to support liquidity management, strategic partnerships, and unforeseen operational needs, ensuring stability and sustainability.</p>
                 </div>
             </div>
-            <div className="flex justify-center items-center mt-20">
+            {/* <div className="flex justify-center items-center mt-20">
                 <div className="w-1/2">
                     <Doughnut data={data} />
                 </div>
-            </div>
+            </div> */}
         </div>
 
 
