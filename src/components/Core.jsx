@@ -89,8 +89,8 @@ const Core = () => {
 
 
         <div className="flex items-center justify-center min-h-screen  text-white py-12">
-            <div className="r">
-                <h2 className="text-5xl font-bold mb-10 font-Grandstander">Join the GAPX Token Ecosystem</h2>
+            <div className="">
+                <h2 className="text-5xl font-bold mb-10 font-Grandstander text-center">Join the GAPX Token Ecosystem</h2>
                 <div className=" mx-auto px-4 grid  gap-6">
                     <div className="bg-gray-800 p-10 rounded-lg shadow-lg">
                         <div className="flex items-center mb-4">

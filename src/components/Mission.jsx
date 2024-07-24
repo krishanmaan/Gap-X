@@ -3,7 +3,7 @@ import React from 'react'
 const Mission = () => {
     return (
         <>
-            <section className=' max-w-screen-xl  h-screen backdrop-blur-sm mt-40 align-middle  flex flex-col items-center justify-center '>
+            <section className=' max-w-screen-xl   backdrop-blur-sm  align-middle  flex flex-col items-center justify-center '>
                 <h1 className='font-black text-7xl mt-10 text-white text-center  '>Our Mission And Vision</h1>
                 <div className='border-4 m-10 p-6 flex rounded-2xl w-3/4 '>
                     <div className='w-1/4  text-right flex justify-end'>
