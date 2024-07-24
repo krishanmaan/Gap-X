@@ -14,12 +14,12 @@ export default function Hero() {
                         <svg  className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" ></path></svg>
                     </a> */}
                     <h1 className="mb-4 lg:text-8xl md:text-7xl text-6xl  font-medium font-Grandstander text-center  tracking-tight leading-none  text-[#869BA1] ">Shaping Your Secure Digital Future with Gap’X</h1>
-                    <p className="mb-8 text-3xl font-thin font-Grandstander text-[#627B89]">A new smart block chain based marketplace for trading digital
+                    <p className="mb-8 text-5xl font-thin font-Grandstander text-[#627B89]">A new smart block chain based marketplace for trading digital
                         goods & assets according.
                     </p> 
                 </div>
-                <div className='   mx-auto  md:h-1/3 md:w-auto md:mt-60  '>
-                    <img src={robot} alt="" className=' hidden xl:block md:block  ' />
+                <div className='   mx-auto  md:h-1/3 md:w-auto md:mt-60   '>
+                    <img src={robot} alt="" className=' hidden xl:block md:block ' />
 
                 </div>
                 <div className="circlePosition w-[590px] h-[400px] bg-[#000] rounded-[100%] absolute z-1 

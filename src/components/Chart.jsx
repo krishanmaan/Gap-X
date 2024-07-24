@@ -18,7 +18,7 @@ export default function Component() {
             maxWidth: "1320px",
             paddingLeft: "15px",
             paddingRight: "15px",
-            marginTop: '400px',
+           
           }}
         >
           <div

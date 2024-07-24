@@ -27,7 +27,8 @@
 
 body{
     background-color: #020519;
-    background-image: url(../public/assets/img/images/bg.png);
+    background-image: url(../public/assets/img/bg/backround.gif);
+    /* background-image: url(../public/assets/img/images/bg.png); */
 }
 
 .footer{
