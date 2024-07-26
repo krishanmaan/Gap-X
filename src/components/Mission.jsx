@@ -1,5 +1,4 @@
-import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Mission = () => {
     return (
@@ -16,7 +15,7 @@ const Mission = () => {
 
                     <div className='text-white w-3/4'>
                         <h1 className='text-5xl pb-4 pt-0  font-Grandstander text-[#0EE9A0]'>Mission</h1>
-                        <p className='font-thin tracking-widest text-sm  font-Grandstander '>Gapx aims to empower through an innovative referral program and a robust ecosystem. We enhance digital interactions with a secure token, transforming gaming, the metaverse, and transactions. Explore our Gapx Chain, Wallet, Exchange, and Gaming Portal, where advanced blockchain technology redefines standards in tech and user experience.</p>
+                        <p className='font-thin tracking-widest md:tracking-normal text-xs md:text-xl font-Lotata '>Gapx aims to empower through an innovative referral program and a robust ecosystem. We enhance digital interactions with a secure token, transforming gaming, the metaverse, and transactions. Explore our Gapx Chain, Wallet, Exchange, and Gaming Portal, where advanced blockchain technology redefines standards in tech and user experience.</p>
                     </div>
 
                 </div>
@@ -28,7 +27,7 @@ const Mission = () => {
                     </div >
                     <div className='text-white w-3/4'>
                         <h1 className='text-5xl pb-4 pt-0 font-thin font-Grandstander text-[#0EE9A0]'  >Vision</h1>
-                        <p className='font-thin tracking-widest text-sm  font-Grandstander ' >Lead digital interaction evolution with Gapx, boosting global connectivity and innovation. Our secure token, integrated in gaming, the metaverse, and digital transactions, aims to foster seamless, empowered communities worldwide. Join us in confidently shaping tomorrow's digital landscape.</p>
+                        <p className='font-thin tracking-widest md:tracking-normal text-xs md:text-xl  font-Lotata ' >Lead digital interaction evolution with Gapx, boosting global connectivity and innovation. Our secure token, integrated in gaming, the metaverse, and digital transactions, aims to foster seamless, empowered communities worldwide. Join us in confidently shaping tomorrow's digital landscape.</p>
                     </div>
                 </div>
             </section>

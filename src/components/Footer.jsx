@@ -10,28 +10,28 @@ import { MdGroups2 } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="  mx-auto px-4 max-w-screen-xl font-Grandstander p-6 text-white ">
-            <div className="footer-section mt-12  border-b border-blue-900 ">
+        <div className="  mx-auto px-4 max-w-screen-xl font-Grandstander pb-2 text-white sm:amx-h-screen ">
+            <div className="footer-section mt-12  border-b border-[#0EE9A0] ">
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full md:w-1/3 sm:w-2/3 px-4">
                         <div className="footer-widget">
-                            <div className="footer-logo mb-5">
+                            <div className="footer-logo ">
                                 <a href="#">
                                     <img
                                         alt="cryptocoin image"
                                         src={logo}
-                                        className=""
+                                        className="w-40"
                                     />
                                 </a>
                             </div>
-                            <p className="text-[#bfdbff] text-sm font-light leading-7">
+                            <p className="text-[#bfdbff] text-sm font-sans ">
                                 A new smart blockchain-based marketplace for trading digital
                                 goods & assets according.
                             </p>
                             <div className="mt-5">
-                                <ul className="flex ">
+                                <ul className="flex socil ">
                                     <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61562116088413&sk=about" className="text-gray-500 hover:text-white " >
+                                        <a href="https://www.facebook.com/profile.php?id=61562116088413" className="text-gray-500 hover:text-white " >
                                             <FaFacebook className='text-3xl' />
 
                                         </a>
@@ -64,8 +64,8 @@ const Footer = () => {
                     </div>
                     <div className="w-full md:w-1/6 sm:w-1/3 px-4">
                         <div className="">
-                            <h6 className="text-white text-sm font-semibold">USEFUL LINKS</h6>
-                            <ul>
+                            <h6 className="text-[#0EE9A0] text-md ">USEFUL LINKS</h6>
+                            <ul className='footrul font-sans text-sm'>
                                 <li className="">
                                     <a href="#" className="text-[#bfdbff] ">Home</a>
                                 </li>
@@ -85,13 +85,13 @@ const Footer = () => {
 
 
                     <div className="w-full md:w-1/6 sm:w-1/3 px-4">
-                        <div className="footer-widget">
-                            <h6 className="text-white text-sm font-semibold mb-7">SOLUTIONS</h6>
-                            <ul>
-                                <li className="py-2">
-                                    <a href="#" className="text-[#bfdbff] text-sm">TOKENOMICS</a>
+                        <div className="footer-widget ">
+                            <h6 className="text-[#0EE9A0] text-md mt-4  lg:mt-0 md:mt-0">SOLUTIONS</h6>
+                            <ul className='footrul font-sans text-sm'>
+                                <li className="">
+                                    <a href="#" className="text-[#bfdbff] text-sm ">TOKENOMICS</a>
                                 </li>
-                                <li className="py-2">
+                                <li className="">
                                     <a href="#roadMap" className="text-[#bfdbff] text-sm">ROADMAP</a>
                                 </li>
                             </ul>
@@ -99,13 +99,13 @@ const Footer = () => {
                     </div>
                     <div className="w-full md:w-1/3 sm:w-2/3 px-4">
                         <div className="footer-widget">
-                            <h6 className="text-white text-sm font-semibold mb-7">Newsletter</h6>
-                            <p className="text-[#bfdbff] text-sm font-light leading-7">
+                            <h6 className="text-[#0EE9A0] text-md font-semibold mb-1 mt-4">Newsletter</h6>
+                            <p className="text-[#bfdbff] text-sm font-light font-sans leading-7">
                                 Sign up to get our all latest news and
                             </p>
                             <form>
                                 <input
-                                    className="form-control my-5 p-3 w-full rounded-full bg-[#072457] text-white"
+                                    className="form-control my-5 p-3 w-full rounded-full bg-[#fff] text-white"
                                     type="email"
                                     placeholder="Email"
                                 />
@@ -122,6 +122,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <p className='text-center text-xs font-sans mt-4'>Copyright ©️ Gap-X Coin 2024. All Rights Reserved.</p>
         </div>
 
     )

@@ -1,7 +1,12 @@
 // import React from "react";
 import { useState } from "react";
 import logo from '../../public/assets/img/logo/lo.png'
+import { motion } from "framer-motion"
 
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-10%" },
+}
 
 
 export default function Navbar() {
@@ -9,14 +14,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-transparent backdrop-blur-sm fixed w-full z-20 top-0 left-0 border-gray-200  border-b lg:border-none lg:pt-10 ">
+      <nav
+        className="bg-transparent backdrop-blur-sm fixed w-full z-20 top-0 left-0 border-gray-200  border-b lg:border-none lg:pt-10 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
           <a href="#" className="">
             <img src={logo} className="w-28" alt="GAPX Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 rtl:space-x-reverse pr-4">
             <a
-              className="links__btn hidden lg:block  text-white text-lg font-normal leading-[140%] transition duration-300 px-5 py-3 border-2 border-white rounded-full"
+              className="links__btn hidden lg:block bg-[#000012] text-[#0EE9A0] font-Grandstander text-lg font-normal leading-[140%] transition duration-300 px-5 py-3 border-2 border-[#0EE9A0] rounded-full"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,17 +59,21 @@ export default function Navbar() {
                   />
                 </svg>
               ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-53.24 -51.863 1024 1024" fill="#fff" > 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-53.24 -51.863 1024 1024" fill="#fff" >
                   <path d="M81.235 228.081H849.454c15.264 0 28-12.737 28-28s-12.736-28-28-28H81.234c-15.263 0-28 12.737-28 28s12.738 28 28.001 28zm0 261.5H649.456c15.264 0 28-12.736 28-28 0-15.263-12.736-28-28-28H81.235c-15.263 0-28 12.737-28 28s12.737 28 28 28zm0 261.5h368.219c15.264 0 28-12.736 28-28s-12.736-28-28-28H81.235c-15.263 0-28 12.736-28 28s12.737 28 28 28z" />
                 </svg>
               )}
             </button>
           </div>
           <div
+
             className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${toggleMenu ? "block" : "hidden"}`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col lg:gap-4 p-4 text-lg md:p-0 mt-4 font-medium font-Grandstander border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <motion.ul
+              animate={toggleMenu ? "open" : "open"}
+              variants={variants}
+              className="flex flex-col lg:gap-4 p-4 text-lg md:p-0 mt-4 font-medium font-Grandstander border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               {[
                 { name: "HOME", link: "#" },
                 { name: "ABOUT US", link: "#aboutus" },
@@ -74,21 +84,21 @@ export default function Navbar() {
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="block py-2 px-3  hover:text-xl text-white text-base hover:text-[#0EE9A0] rounded md:bg-transparent md:p-0"
+                    className="block py-2 px-3 md:mt-6 hover:text-xl text-white text-base hover:text-[#0EE9A0] rounded md:bg-transparent md:p-0"
                   >
                     {item.name}
                   </a>
                 </li>
               ))}
               <a
-                className="links__btn text-white text-lg font-normal lg:hidden leading-[140%] transition duration-300 px-5 py-3 border-2 border-white rounded-full font-Grandstander"
+                className="links__btn text-[#0EE9A0] text-lg bg-[#000012e2] text-center font-normal lg:hidden leading-[140%] transition duration-300 px-5 py-3 border-2 border-[#0EE9A0] rounded-full font-Grandstander"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Join Airdrop
               </a>
-            </ul>
+            </motion.ul>
           </div>
         </div>
       </nav>

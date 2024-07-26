@@ -34,7 +34,18 @@
 
 body{
     background-image: url(../public/assets/img/bg/backround.gif);
-    background-color: linear-gradient(#000000, #0B1B18);
+    /* background-image: linear-gradient(#000000, #0B1B18); */
     /* background-image: url(../public/assets/img/images/bg.png); */
 }
+.footer{
+    background-image: linear-gradient(#010010, #000000); 
+}
 
+.footrul a{
+    margin: 0 0 -15px -15px;
+   
+}
+
+.socil a{
+    margin: 0 -10px 15px -15px;
+}

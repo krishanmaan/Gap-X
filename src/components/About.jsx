@@ -22,11 +22,6 @@ const About = () => {
                     <div className="circlePosition w-[300px] h-[500px] bg-[#203A04] rounded-full absolute z-1 translate-x-[-50%] translate-y-[-50%] blur-[200px]"></div>
                 </div>
             </section>
-          
-
-
-
-
         </>
     )
 }

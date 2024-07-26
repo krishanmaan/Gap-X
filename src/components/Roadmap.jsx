@@ -44,8 +44,8 @@ const Timeline = () => {
     // }, []);
 
     return (
-        <section id='roadMap' className="timeline mt-40  items-center flex justify-center h-screen ">
-            <div className="container relative">
+        <section id='roadMap' className="timeline  items-center flex justify-center">
+            <div className="container ">
                 {/* ITEM 1 */}
                 <div className="timeline-item mb-16 relative">
                     <div className="timeline-img w-8 h-8 bg-primary "></div>
