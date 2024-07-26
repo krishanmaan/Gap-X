@@ -4,12 +4,7 @@ import Presale from '../../public/assets/img/icons/Presale.png'
 import Reserve from '../../public/assets/img/icons/Reserve.png'
 import Team from '../../public/assets/img/icons/team.png'
 import Development from '../../public/assets/img/icons/Development.png'
-
-import { motion, useAnimation } from "framer-motion";
-
-
-
-
+import { motion } from "framer-motion";
 
 const Core = () => {
 

@@ -3,7 +3,6 @@
 const Mission = () => {
     return (
         <>
-
             <section className=' max-w-screen-xl   backdrop-blur-sm  align-middle  flex flex-col items-center justify-center mx-auto   '>
                 <h1 className='font-black lg:text-7xl text-5xl mt-10 text-white text-center  '>Our Mission & Vision</h1>
                 <div className='border-4 mt-10 p-6 flex rounded-2xl w-3/4 '>
@@ -17,7 +16,6 @@ const Mission = () => {
                         <h1 className='text-5xl pb-4 pt-0  font-Grandstander text-[#0EE9A0]'>Mission</h1>
                         <p className='font-thin tracking-widest md:tracking-normal text-xs md:text-xl font-Lotata '>Gapx aims to empower through an innovative referral program and a robust ecosystem. We enhance digital interactions with a secure token, transforming gaming, the metaverse, and transactions. Explore our Gapx Chain, Wallet, Exchange, and Gaming Portal, where advanced blockchain technology redefines standards in tech and user experience.</p>
                     </div>
-
                 </div>
                 <div className='border-4 mt-10 p-6 flex rounded-2xl w-3/4'>
                     <div className='w-1/4  text-right flex justify-end'>
@@ -31,8 +29,6 @@ const Mission = () => {
                     </div>
                 </div>
             </section>
-
-
         </>
     )
 }

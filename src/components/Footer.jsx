@@ -1,12 +1,8 @@
 import React from 'react'
 import logo from '../../public/assets/img/logo/lo.png'
-
 import { FaFacebook, FaMedium, FaQuora } from "react-icons/fa";
-import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { MdGroups2 } from "react-icons/md";
-
-
-
 
 const Footer = () => {
     return (
@@ -83,7 +79,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-
                     <div className="w-full md:w-1/6 sm:w-1/3 px-4">
                         <div className="footer-widget ">
                             <h6 className="text-[#0EE9A0] text-md mt-4  lg:mt-0 md:mt-0">SOLUTIONS</h6>
@@ -124,7 +119,6 @@ const Footer = () => {
             </div>
             <p className='text-center text-xs font-sans mt-4'>Copyright ©️ Gap-X Coin 2024. All Rights Reserved.</p>
         </div>
-
     )
 }
 

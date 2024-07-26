@@ -7,9 +7,6 @@ const About = () => {
             <section id="aboutus" className="flex flex-col xl:flex-row md:flex-row min-h-screen justify-center items-center max-w-screen-xl mx-auto    ">
                 <div className="w-full flex items-center justify-center relative mb-8 xl:mb-0 md:mb-0 ">
                     <img src={baner} alt="baner" className="w-96 " />
-                    {/* <div className="circlePosition w-[500px] h-[500px] bg-[#203A04] rounded-full absolute blur-[250px]">
-
-                    </div> */}
                 </div>
                 <div className="w-full text-white font-Grandstander items-center justify-center flex flex-col px-4 md:px-8 lg:px-12 xl:mr-4">
                     <h1 className="font-black text-5xl md:text-7xl lg:text-7xl xl:text-7xl pb-10 text-center xl:text-left">About<samp className='font-Grandstander text-[#0EE9A0]' > Gap-X</samp></h1>
