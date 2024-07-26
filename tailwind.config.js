@@ -13,6 +13,7 @@ export default {
     fontFamily: {
       Grandstander : "'Grandstander' ",
       Inter : "'Inter' ",
+      Lotata : "'Lotata' ",
 
     
       'body': [

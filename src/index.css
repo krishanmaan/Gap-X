@@ -8,7 +8,7 @@
         font-style: italic;
         /* font-weight: 500; */
         font-display: swap;
-        src: url(../public/assets/fonts/Grandstander.woff2) format('woff2');
+        src: url(../public/assets/fonts/lota.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Inter';
@@ -16,6 +16,13 @@
         /* font-weight: 500; */
         font-display: swap;
         src: url(../public/assets/fonts/Inter.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Lotata';
+        font-style: italic;
+        /* font-weight: 500; */
+        font-display: swap;
+        src: url(../public/assets/fonts/lotata.woff2) format('woff2');
     }
 }
 
@@ -26,11 +33,8 @@
 
 
 body{
-    background-color: #020519;
     background-image: url(../public/assets/img/bg/backround.gif);
+    background-color: linear-gradient(#000000, #0B1B18);
     /* background-image: url(../public/assets/img/images/bg.png); */
 }
 
-.footer{
-    background-image: url(../public//assets/img/banner/banner_bg.png);
-}
