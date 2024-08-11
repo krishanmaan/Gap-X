@@ -27,7 +27,7 @@ export default function ContactForm() {
         emailjs
             .send(
                 'service_wfu91va',
-                'template_31d2kpb',
+                'template_apnzwwo',
                 {
                     from_name: form.name,
                     to_name: "Gap-x",
