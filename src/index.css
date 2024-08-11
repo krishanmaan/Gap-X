@@ -10,6 +10,7 @@
         font-display: swap;
         src: url(../public/assets/fonts/lota.woff2) format('woff2');
     }
+
     @font-face {
         font-family: 'Inter';
         font-style: italic;
@@ -17,6 +18,7 @@
         font-display: swap;
         src: url(../public/assets/fonts/Inter.woff2) format('woff2');
     }
+
     @font-face {
         font-family: 'Lotata';
         font-style: italic;
@@ -32,24 +34,54 @@
 
 
 
-body{
+body {
     background-image: url(../public/assets/img/bg/backround.gif);
     /* background-image: linear-gradient(#000000, #0B1B18); */
     /* background-image: url(../public/assets/img/images/bg.png); */
 }
-.footer{
-    background-image: linear-gradient(#010010, #000000); 
+
+.bgb {
+    background-image: linear-gradient(#010010, #1a1a27);
 }
 
-.footrul a{
+.footrul a {
     margin: 0 0 -15px -15px;
-   
+
 }
 
-.socil a{
+.socil a {
     margin: 0 -10px 15px -15px;
 }
 
-.bbb{
+.bbb {
     background-color: #000012;
 }
+
+.navlogo {
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+.svgchart {
+    margin-bottom: -150px;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    animation: marquee 30s linear infinite;
+}
+

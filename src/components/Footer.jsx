@@ -1,125 +1,95 @@
-import React from 'react'
-import logo from '../../public/assets/img/logo/lo.png'
+import React from 'react';
+import logo from '../../public/assets/img/logo/lo.png';
+import robot from '../../public/assets/img/logo/fffd.png';
 import { FaFacebook, FaMedium, FaQuora } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { MdGroups2 } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="  mx-auto px-4 max-w-screen-xl font-Grandstander pb-2 text-white sm:amx-h-screen ">
-            <div className="footer-section mt-12  border-b border-[#0EE9A0] ">
-                <div className="flex flex-wrap -mx-4">
-                    <div className="w-full md:w-1/3 sm:w-2/3 px-4">
+        <div className="mx-auto max-w-screen-xl px-4 pb-2 pt-16 text-white font-Grandstander">
+            <div className="footer-section border-b border-[#0EE9A0]">
+                <div className="flex flex-wrap -mx-4 text-center md:text-left">
+                    <div className="w-full sm:w-2/3 md:w-1/3 px-4">
                         <div className="footer-widget">
-                            <div className="footer-logo ">
+                            <div className="footer-logo hidden md:block">
                                 <a href="#">
                                     <img
-                                        alt="cryptocoin image"
                                         src={logo}
-                                        className="w-40"
+                                        alt="Cryptocoin Logo"
+                                        className="w-40 mx-auto md:mx-0 "
                                     />
                                 </a>
                             </div>
-                            <p className="text-[#bfdbff] text-sm font-sans ">
+                            <p className="text-sm text-[#FFF] font-sans">
                                 A new smart blockchain-based marketplace for trading digital
                                 goods & assets according.
                             </p>
-                            <div className="mt-5">
-                                <ul className="flex socil ">
-                                    <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61562116088413" className="text-gray-500 hover:text-white " >
+                            <div className="mt-5 md:pb-10">
+                                <ul className="flex justify-center md:justify-start socil">
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://www.facebook.com/profile.php?id=61562116088413" className="text-gray-500 hover:text-white">
                                             <FaFacebook className='text-3xl' />
-
                                         </a>
                                     </li>
-                                    <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://x.com/GapXbit" className="text-gray-500 hover:text-white" >
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://x.com/GapXbit" className="text-gray-500 hover:text-white">
                                             <FaSquareXTwitter className='text-3xl' />
                                         </a>
                                     </li>
-                                    <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://medium.com/@gapxbit" className="text-gray-500 hover:text-white " >
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://medium.com/@gapxbit" className="text-gray-500 hover:text-white">
                                             <FaMedium className='text-3xl' />
                                         </a>
                                     </li>
-                                    <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://www.quora.com/profile/GAP-X-BIT" className="text-gray-500 hover:text-white " >
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://www.quora.com/profile/GAP-X-BIT" className="text-gray-500 hover:text-white">
                                             <FaQuora className='text-3xl' />
                                         </a>
                                     </li>
-                                    <li className="flex sm:justify-center sm:mt-0 rounded-full items-center justify-center cursor-pointer">
-                                        <a href="https://coinmarketcap.com/community/profile/Gapx/" className="text-gray-500 hover:text-white " >
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://coinmarketcap.com/community/profile/Gapx/" className="text-gray-500 hover:text-white">
                                             <MdGroups2 className='text-3xl' />
                                         </a>
                                     </li>
-
                                 </ul>
-
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/6 sm:w-1/3 px-4">
-                        <div className="">
-                            <h6 className="text-[#0EE9A0] text-md ">USEFUL LINKS</h6>
-                            <ul className='footrul font-sans text-sm'>
-                                <li className="">
-                                    <a href="#" className="text-[#bfdbff] ">Home</a>
-                                </li>
-                                <li className="">
-                                    <a href="#aboutus" className="text-[#bfdbff] text-sm">ABOUT US</a>
-                                </li>
-                                <li className="">
-                                    <a href="" className="text-[#bfdbff] ">REFER & EARN</a>
-                                </li>
-                                <li className="">
-                                    <a href="#" className="text-[#bfdbff] ">CONTACT</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div className="w-full md:w-1/6 sm:w-1/3 px-4">
-                        <div className="footer-widget ">
-                            <h6 className="text-[#0EE9A0] text-md mt-4  lg:mt-0 md:mt-0">SOLUTIONS</h6>
-                            <ul className='footrul font-sans text-sm'>
-                                <li className="">
-                                    <a href="#" className="text-[#bfdbff] text-sm ">TOKENOMICS</a>
-                                </li>
-                                <li className="">
-                                    <a href="#roadMap" className="text-[#bfdbff] text-sm">ROADMAP</a>
-                                </li>
+                    <div className="w-full sm:w-1/3 md:w-1/6 px-4 md:mr-20">
+                        <div>
+                            <h6 className="text-xl text-[#0EE9A0]">USEFUL LINKS</h6>
+                            <ul className='footrul text-sm font-sans'>
+                                <li><a href="#" className="text-[#FFF]">Home</a></li>
+                                <li><a href="#aboutus" className="text-[#FFF]">ABOUT US</a></li>
+                                <li><a href="#TOKENOMICS" className="text-[#FFF]">TOKENOMICS</a></li>
+                                <li><a href="#roadMap" className="text-[#FFF]">roadmap</a></li>
+                                <li><a href="#contact" className="text-[#FFF]">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/3 sm:w-2/3 px-4">
+                    <div className="w-full sm:w-1/3 md:w-1/3 px-4 pt-6 md:pt-0">
                         <div className="footer-widget">
-                            <h6 className="text-[#0EE9A0] text-md font-semibold mb-1 mt-4">Newsletter</h6>
-                            <p className="text-[#bfdbff] text-sm font-light font-sans leading-7">
+                            <h6 className="text-xl text-[#0EE9A0] mb-1">NEWSLETTER</h6>
+                            <p className="text-sm text-[#FFF] font-light font-sans leading-7">
                                 Sign up to get our all latest news and
                             </p>
+                            <img src={robot} alt="Robot" className="md:hidden w-40 mx-auto md:mx-0" />
                             <form>
                                 <input
-                                    className="form-control my-5 p-3 w-full rounded-full bg-[#fff] text-white"
                                     type="email"
                                     placeholder="Email"
+                                    className="form-control my-5 w-full p-3 rounded-full bg-[#fff] text-white"
                                 />
-                                {/* <a
-                                    className="links__btn   text-white text-lg font-normal leading-[140%] transition duration-300 px-5 py-3 border-2 border-white rounded-full"
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Join Airdrop
-                                </a> */}
                             </form>
                         </div>
                     </div>
                 </div>
+                <h1 className='text-xl text-[#0EE9A0] mb-1 text-center md:hidden'>Thank You❤️</h1>
             </div>
             <p className='text-center text-xs font-sans mt-4'>Copyright ©️ Gap-X Coin 2024. All Rights Reserved.</p>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

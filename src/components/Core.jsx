@@ -14,9 +14,9 @@ const Core = () => {
     };
 
     return (
-        <div className="flex items-center max-w-screen-xl mx-auto justify-center min-h-screen text-white pt-12">
+        <div className="flex items-center max-w-screen-xl mx-auto justify-center  text-white pt-10">
             <div>
-                <h2 className=" lg:text-7xl text-5xl font-bold mb-10 font-Grandstander text-center">
+                <h2 className=" lg:text-7xl text-5xl font-bold mb-4 font-Grandstander text-center">
                     GAP-X <samp className="font-Grandstander text-[#0EE9A0]">Ecosystem</samp>
                 </h2>
                 <div className="mx-auto px-2 grid gap-4 lg:grid-cols-3">
@@ -97,6 +97,7 @@ const Core = () => {
                         </div>
                         <h3 className="text-xl font-semibold font-Grandstander text-[#0EE9A0] pb-1">
                             Reserve</h3>
+                        <div id='roadMap' className=''></div>
                         <p className="font-Lotata">Held in reserve to support liquidity management, strategic partnerships, and unforeseen operational needs, ensuring stability and sustainability.</p>
                     </motion.div>
                 </div>

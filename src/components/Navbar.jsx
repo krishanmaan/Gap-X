@@ -1,49 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from '../../public/assets/img/logo/lo.png';
 import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
 
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const handleScroll = () => {
-      let st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-     
-        setShowNavbar(false);
-      } else {
-        
-        setShowNavbar(true);
-      }
-      lastScrollTop = st <= 0 ? 0 : st; 
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const handleNavItemClick = () => {
+    setToggleMenu(false);
+  };
 
   return (
     <>
       <nav
-        className={`bg-[#000012] backdrop-blur-sm w-full fixed z-20 top-0 left-0 border-gray-200 border-b lg:border-none lg:pt-10 transition-transform duration-300 ${
-          showNavbar ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`bg-[#000012] backdrop-blur-sm w-full fixed z-20 top-0 left-0 border-gray-200 border-b lg:border-none transition-transform duration-300`}
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <div className="navlogo max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <a href="#" className="">
             <img src={logo} className="w-28" alt="GAPX Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 rtl:space-x-reverse pr-4">
-            <a
-              className="links__btn hidden lg:block text-white text-lg font-normal leading-[140%] transition duration-300 px-5 py-3 border-2 border-white rounded-full"
+            <motion.a
+              whileHover={{ scale: 0.9 }}
+              className="links__btn hidden lg:block text-black bg-[#0EE89F] text-lg font-normal leading-[140%] transition duration-300 px-5 py-3 border-2 border-black rounded-full"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
               Join Airdrop
-            </a>
+            </motion.a>
             <button
               onClick={() => setToggleMenu(!toggleMenu)}
               type="button"
@@ -74,8 +58,17 @@ export default function Navbar() {
                   />
                 </svg>
               ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-53.24 -51.863 1024 1024" fill="#fff">
-                  <path d="M81.235 228.081H849.454c15.264 0 28-12.737 28-28s-12.736-28-28-28H81.234c-15.263 0-28 12.737-28 28s12.738 28 28.001 28zm0 261.5H649.456c15.264 0 28-12.736 28-28 0-15.263-12.736-28-28-28H81.235c-15.263 0-28 12.737-28 28s12.737 28 28 28zm0 261.5h368.219c15.264 0 28-12.736 28-28s-12.736-28-28-28H81.235c-15.263 0-28 12.736-28 28s12.737 28 28 28z" />
+                <svg
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6H20M4 12H20M4 18H11"
+                    stroke="#fff"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2" />
                 </svg>
               )}
             </button>
@@ -84,34 +77,37 @@ export default function Navbar() {
             className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${toggleMenu ? "block" : "hidden"}`}
             id="navbar-sticky"
           >
-            <motion.ul
-              className="flex flex-col lg:gap-4 p-4 text-lg md:p-0 mt-4 font-medium font-Grandstander border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            <ul
+              className="flex flex-col lg:gap-4 p-4 text-lg md:p-0 mt-2 font-medium font-Grandstander border-2 border-b-0 border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               {[
                 { name: "HOME", link: "#" },
                 { name: "ABOUT US", link: "#aboutus" },
-                { name: "TOKENOMICS", link: "#" },
+                { name: "TOKENOMICS", link: "#TOKENOMICS" },
                 { name: "ROADMAP", link: "#roadMap" },
-                { name: "REFER & EARN", link: "#" },
+                { name: "contact us", link: "#contact" },
               ].map((item, index) => (
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="block py-2 px-3 hover:text-xl text-white text-base hover:text-[#0EE9A0] rounded md:bg-transparent md:p-0"
+                    className="block py-2 px-3 hover:text-xl md:mt-6 text-white text-base hover:text-[#0EE9A0] rounded md:bg-transparent md:p-0"
+                    onClick={handleNavItemClick}
                   >
                     {item.name}
                   </a>
                 </li>
               ))}
-              <a
-                className="links__btn text-white text-lg font-normal lg:hidden leading-[140%] transition duration-300 px-5 py-3 border-2 border-white rounded-full font-Grandstander"
+              <motion.a
+                whileHover={{ scale: 0.9 }}
+                className="links__btn text-black bg-[#0EE9A0] text-lg font-normal lg:hidden leading-[140%] transition duration-300 px-5 py-3 border-2 border-black rounded-full font-Grandstander"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleNavItemClick}
               >
                 Join Airdrop
-              </a>
-            </motion.ul>
+              </motion.a>
+            </ul>
           </div>
         </div>
       </nav>
