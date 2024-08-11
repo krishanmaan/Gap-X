@@ -28,17 +28,13 @@
     }
 }
 
-/* body{
-    background-image: url(../public/assets/img/images/back.png);
-} */
 
 
 
 body {
     background-image: url(../public/assets/img/bg/backround.gif);
-    /* background-image: linear-gradient(#000000, #0B1B18); */
-    /* background-image: url(../public/assets/img/images/bg.png); */
 }
+   
 
 .bgb {
     background-image: linear-gradient(#010010, #1a1a27);
@@ -84,4 +80,3 @@ body {
     overflow: hidden;
     animation: marquee 30s linear infinite;
 }
-

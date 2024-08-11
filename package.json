@@ -13,6 +13,7 @@
     "@adobe/react-spectrum": "^3.36.1",
     "@adobe/react-spectrum-charts": "^1.11.2",
     "@dvlpralamin/star-field": "^1.0.3",
+    "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.1.5",
     "@material-tailwind/react": "^2.1.9",
     "animate.css": "^4.1.1",
