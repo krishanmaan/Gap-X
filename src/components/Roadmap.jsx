@@ -1,9 +1,6 @@
-// import React, { useEffect } from 'react';
-// import ScrollReveal from 'scrollreveal';
-// import './Timeline.css'; // CSS file ka path adjust kar lena
-import './Timeline.scss'; // CSS file ka path adjust kar lena
+
+import './Timeline.scss'; 
 import { motion } from 'framer-motion';
-import { slideIn } from "../utils/motion";
 import { useState, useEffect } from 'react';
 
 const fadeInLeft = {
@@ -18,46 +15,7 @@ const fadeInRight = {
 
 
 const Timeline = () => {
-    // useEffect(() => {
-    //     const sr = ScrollReveal();
-
-    //     const revealOptions = {
-    //         origin: 'left',
-    //         distance: '-300px',
-    //         easing: 'ease-in-out',
-    //         duration: 400,
-    //     };
-
-    //     const handleResize = () => {
-    //         if (window.innerWidth < 768) {
-    //             document.querySelectorAll('.timeline-content.js--fadeInLeft').forEach(el => {
-    //                 el.classList.remove('js--fadeInLeft');
-    //                 el.classList.add('js--fadeInRight');
-    //             });
-
-    //             sr.reveal('.js--fadeInRight', {
-    //                 ...revealOptions,
-    //                 origin: 'right',
-    //             });
-    //         } else {
-    //             sr.reveal('.js--fadeInLeft', revealOptions);
-    //             sr.reveal('.js--fadeInRight', {
-    //                 ...revealOptions,
-    //                 origin: 'right',
-    //             });
-    //         }
-    //     };
-
-    //     handleResize(); // Initial call
-    //     window.addEventListener('resize', handleResize);
-
-    //     // Cleanup event listener on component unmount
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
-
-
+   
 
     return (
 
