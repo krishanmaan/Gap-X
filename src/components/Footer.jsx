@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import logo from '../../public/assets/img/logo/lo.png';
+import dextools from '../../public/assets/img/icons/dextools.png';
 import robot from '../../public/assets/img/logo/fffd.png';
-import { FaFacebook, FaMedium, FaQuora } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { MdGroups2 } from "react-icons/md";
+import { FaFacebook, FaQuora, FaMedium, FaTelegram, } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaSquareXTwitter, } from "react-icons/fa6";
 
 const Footer = () => {
+    const formRef = useRef();
+    const [email, setEmail] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs
+            .send(
+                'service_wfu91va',
+                'template_apnzwwo',
+                {
+                    from_email: email,
+                    to_email: "Gapxbit@gmail.com",
+                },
+                'jOfy5fijPW7lYjGIz'
+            )
+            .then(
+                () => {
+                    setLoading(false);
+                    setEmail("");
+                },
+                (error) => {
+                    setLoading(false);
+                    console.error(error);
+
+                }
+            );
+    };
     return (
         <div className="mx-auto max-w-screen-xl px-4 pb-2 pt-16 text-white font-Grandstander">
             <div className="footer-section border-b border-[#0EE9A0]">
@@ -38,18 +74,25 @@ const Footer = () => {
                                         </a>
                                     </li>
                                     <li className="flex items-center justify-center rounded-full cursor-pointer">
-                                        <a href="https://medium.com/@gapxbit" className="text-gray-500 hover:text-white">
-                                            <FaMedium className='text-3xl' />
-                                        </a>
-                                    </li>
-                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
                                         <a href="https://www.quora.com/profile/GAP-X-BIT" className="text-gray-500 hover:text-white">
                                             <FaQuora className='text-3xl' />
                                         </a>
                                     </li>
                                     <li className="flex items-center justify-center rounded-full cursor-pointer">
-                                        <a href="https://coinmarketcap.com/community/profile/Gapx/" className="text-gray-500 hover:text-white">
-                                            <MdGroups2 className='text-3xl' />
+                                        <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x342dbdf4388cbda2142de0d3b5211f8d94b9d946?t=1723908324583" className="text-gray-500 hover:text-white">
+                                            <img src={dextools} alt="" className='w-7 h-7' />
+
+                                        </a>
+                                    </li>
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://medium.com/@gapxbit" className="text-gray-500 hover:text-white">
+                                            <FaMedium className='text-3xl' />
+                                        </a>
+                                    </li>
+
+                                    <li className="flex items-center justify-center rounded-full cursor-pointer">
+                                        <a href="https://t.me/GapXbit" className="text-gray-500 hover:text-white">
+                                            <FaTelegram className='text-3xl' />
                                         </a>
                                     </li>
                                 </ul>
@@ -75,13 +118,33 @@ const Footer = () => {
                                 Sign up to get our all latest news and
                             </p>
                             <img src={robot} alt="Robot" className="md:hidden w-40 mx-auto md:mx-0" />
-                            <form>
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    className="form-control my-5 w-full p-3 rounded-full bg-[#fff] text-white"
-                                />
+                            <form ref={formRef} onSubmit={handleSubmit} className="relative w-full">
+                                <div className="relative">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={email}
+                                        onChange={handleChange}
+                                        placeholder="Your Email"
+                                        className="form-control my-5 w-full p-3 rounded-full bg-[#fff] text-black pr-20"
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="absolute top-1/2 right-0 transform -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-[#0EE89F] text-black font-Grandstander rounded-full mr-1"
+                                    >
+                                        ➔
+                                    </button>
+                                </div>
                             </form>
+
+                            <div className='flex '>
+                                <MdEmail className='text-lg text-[#FFF] font-light font-sans mr-1 ' />
+                                <p className="text-sm text-[#FFF] font-light font-sans ">
+                                    Support@gapxbit.com
+                                </p>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>

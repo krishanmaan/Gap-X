@@ -27,12 +27,12 @@ export default function ContactForm() {
         emailjs
             .send(
                 'service_wfu91va',
-                'template_31d2kpb',
+                'template_apnzwwo',
                 {
                     from_name: form.name,
                     to_name: "Gap-x",
                     from_email: form.email,
-                    to_email: "gapxbit@gmail.com",
+                    to_email: "Gapxbit@gmail.com",
                     message: form.message,
                 },
                 'jOfy5fijPW7lYjGIz'

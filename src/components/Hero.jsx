@@ -1,4 +1,4 @@
-import robot from '../../public/assets/img/logo/fffd.png'
+import robot from '../../public/assets/img/banner/banner1.png'
 import { motion } from "framer-motion"
 
 export default function Hero() {
