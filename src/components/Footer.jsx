@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from '../../public/assets/img/logo/lo.png';
 import dextools from '../../public/assets/img/icons/dextools.png';
-import robot from '../../public/assets/img/logo/fffd.png';
+import robot from '../../public/assets/img/banner/banner1.png'
 import { FaFacebook, FaQuora, FaMedium, FaTelegram, } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaSquareXTwitter, } from "react-icons/fa6";
